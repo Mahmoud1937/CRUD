@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mohave:ital,wght@0,300;0,500;0,600;0,700;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>crud</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 class="my-5  text-light text-center" > Products Management System</h1> 
+            <div class="text-white main mx-auto w-75 my-5  p-5 rounded">
+               
+               
+                <label  for="productName">Product Name : </label>
+                <input type="text" class="form-control my-2" placeholder="" id="productName">
+                <label for="productPrice">Product Price : </label>
+                <input type="number" class="form-control my-2" id="productPrice">
+                <label for="productCategory">Product Category : </label>
+                <input type="text" class="form-control my-2" placeholder="" id="productCategory">
+                <label for="producrdescrotion">Product Descrption : </label>
+                <textarea id="producrdescrotion" class="form-control my-2"></textarea>
+
+
+                <button id="addData" class="btn d-block main2 my-3 w-100 ">Add Product</button>
+                <button id="updateBtn" class="btn main2 my-3 w-100 d-none ">Update Product</button>
+
+
+
+            </div>
+
+            <div class=" my-5 w-75 mx-auto ">
+                <input oninput="searchProducts(this.value)" type="text" placeholder="Serach By Name "
+                    class="form-control w-75 mx-auto my-3">
+                <table class=" table table-striped table-dark text-center text-capitalize ">
+                    <thead>
+                        <tr>
+                            <td>index</td>
+                            <td>Product Name</td>
+                            <td>Product Price</td>
+                            <td>Product Category</td>
+                            <td>Product Descrption </td>
+                            <td>Update</td>
+                            <td>remove </td>
+                        </tr>
+                    </thead>
+
+                    <tbody id="crudAdding">
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="javaScript/bootstrap.bundle.min.js"></script>
+    <script src="javaScript/index.js"></script>
+</body>
+
+</html>

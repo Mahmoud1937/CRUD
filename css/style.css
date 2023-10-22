@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    background-color: #000000;
+
+    font-family: 'Inter', sans-serif;
+
+}
+
+.main{
+    border: 2px solid rgb(86, 4, 118) ;
+    
+}
+.main2{
+    border: 2px solid rgb(86, 4, 118) ;
+    color:#f6f;
+}
+.main2:hover{
+    background-color: rgb(86, 4, 118) ;
+    color: wheat;
+  
+}
+.textsearch{
+    color: rgb(20, 67, 255);
+}
